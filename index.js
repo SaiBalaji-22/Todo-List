@@ -123,6 +123,8 @@ const updateArray = (afterElement, draggable) => {
     allTodos.splice(allTodos.indexOf(draggableText), 1)
     allTodos.splice(allTodos.indexOf(afterElementText), 0, draggableText)
   }
+
+  localStorage.setItem('allTodos', JSON.stringify(allTodos));
 }
 
 container.addEventListener('dragover', (e) => {

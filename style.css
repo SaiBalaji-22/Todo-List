@@ -37,6 +37,10 @@ input {
   box-shadow: 0.2rem 0.2rem 0.2rem #ff9945;
 }
 
+input:focus {
+  outline: none;
+}
+
 input::placeholder {
   color: #a2a2a2;
 }
